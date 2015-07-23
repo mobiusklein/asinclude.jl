@@ -100,8 +100,8 @@ end)
 Because exported names are automatically injected into the calling scope, iterator methods are transparently made available without any added work.
 
 ```julia
-println(mymodule.MyType(10))
-for i = mymodule.IterType(5)
+println(MyType(10))
+for i = IterType(5)
     println(i)
 end
 ```
